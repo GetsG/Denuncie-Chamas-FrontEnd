@@ -1,0 +1,98 @@
+.container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.card{
+    border: 1px solid #e5e7eb;
+    padding: 20px; 
+    border-radius: 20px;
+}
+
+.logo{
+    width: 170px;
+    height: 120px;
+}
+
+.cardTitle{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.subTitle{
+    font-size: 16px;
+    color: rgb(155, 150, 150);
+    justify-self: center;
+    width: 80%;
+}
+
+.form{
+    margin-bottom: 20px;
+}
+
+.form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.icon {  
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #5e5e5fa8;
+  font-size: 13px;
+}
+
+.input{
+    background-color: #e7e8e9;
+    width: 100%;
+    padding: 12px 12px 12px 45px;
+    border-radius: 8px;
+    border: none;    
+}
+
+.form div label{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form button{
+    background: linear-gradient(
+     to right,
+     #f97316,
+     #dc2626
+);
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 0px;
+    font-weight: bold;
+}
+
+.register{
+    text-align: center;
+    font-size: 13px;
+}
+
+.register span{
+    color: #f97316;
+    font-weight: bold;
+}
