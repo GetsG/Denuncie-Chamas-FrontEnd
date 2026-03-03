@@ -1,0 +1,45 @@
+.Header{
+    display: flex;
+    border-bottom: 1px solid rgb(204, 200, 200);
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: center;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title h1{
+    font-size: 22px;
+}
+
+.title p{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(148, 146, 146);
+}
+
+.buttonLogout{
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+    height: 50px;
+    align-self: center;
+    align-items: center;
+    border: 1px solid rgb(204, 200, 200);
+    border-radius: 8px;
+}

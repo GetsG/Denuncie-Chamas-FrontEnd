@@ -13,7 +13,7 @@ export default function Dashboard(){
 
     return(
         <div>
-            <p>EM CONSTRUÇÃO 🌳</p>
+            
         </div>
     )
 }

@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* Logo, Titulo e Subtitulo */}
         <div className={styles.cardTitle}>
-          <Image className={styles.logo} src={Logo} alt='Logo'/>
+          <Image className={styles.logo} src={Logo} alt='Logo Denuncie Chamas'/>
           <h1 className={styles.title}>Denuncie Chamas</h1>
           <p className={styles.subTitle}>Entre com sua conta para registrar denúncias de incêndios</p>
         </div>
