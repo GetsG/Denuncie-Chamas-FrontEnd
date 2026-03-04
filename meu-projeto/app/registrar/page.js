@@ -180,7 +180,7 @@ export default function Home() {
         </form>
 
         {/* LOGAR */}
-        <p className={styles.logar}>Já tem uma conta? <Link className={styles.logarLink} href="/"> Faça login </Link></p>
+        <p className={styles.logar}>Já tem uma conta? <Link className={styles.logarLink} href="/login"> Faça login </Link></p>
         {/* ------------------------------------ */}
 
         {/* Registrar */}

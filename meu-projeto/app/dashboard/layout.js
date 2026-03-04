@@ -18,9 +18,9 @@ export const metadata = {
 
 export default function PrivateLayout({ children }) {
   return (
-    <div className="appShell">
+    <body style={{ backgroundColor: "#ebedf0" }}>
       <Header/>
       <main>{children}</main>
-    </div>
+    </body>
   );
 }

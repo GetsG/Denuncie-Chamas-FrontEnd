@@ -23,7 +23,7 @@ export default function Header() {
 
     function handleLogout() {
         localStorage.removeItem("token");
-        router.push("/");
+        router.push("/login");
   }
 
   return (

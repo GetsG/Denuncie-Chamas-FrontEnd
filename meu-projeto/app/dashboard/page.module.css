@@ -1,0 +1,67 @@
+.container{
+    padding: 16px 50px;
+}
+
+.dashboardTitleSection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dashboardTitleSection h2{
+    font-size: 20px;
+}
+
+.dashboardTitleSection p{
+    color: rgb(148, 146, 146);
+    font-size: 14px;
+}
+
+.dashboardStats{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 24px 0;
+}
+
+.dashboardStats section{
+    background-color: white;
+    border: 1px solid rgb(148, 146, 146);
+    border-radius: 20px;
+    padding: 15px 20px;
+}
+
+.dashboardActions{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.dashboardActions button{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px dashed rgb(148, 146, 146);
+    padding: 20px;
+    margin: 0 0 24px 0;
+}
+
+.recentDenuncias{
+    background-color: white;
+    border: 1px solid rgb(148, 146, 146);
+    padding: 15px 20px;
+}
+
+.containerTitleRecentDenuncias{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.containerTitleRecentDenuncias p{
+    font-size: 14px;
+    color: rgb(148, 146, 146);
+}
+
+
