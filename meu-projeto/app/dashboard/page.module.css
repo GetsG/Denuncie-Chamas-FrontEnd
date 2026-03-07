@@ -2,6 +2,10 @@
     padding: 16px 50px;
 }
 
+/* ====================
+    TITULO E SUBTITULO
+==================== */
+
 .dashboardTitleSection{
     display: flex;
     flex-direction: column;
@@ -17,6 +21,10 @@
     font-size: 14px;
 }
 
+/* ====================
+    CARD STATUS
+==================== */
+
 .dashboardStats{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -24,12 +32,32 @@
     margin: 24px 0;
 }
 
+.iconPendente{
+    background-color: #f3e7c5;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.iconEmAndamento{
+    background-color: #c4d6f1;
+    border-radius: 20px;
+    padding: 5px;
+}
+
 .dashboardStats section{
     background-color: white;
-    border: 1px solid rgb(148, 146, 146);
+    border: 1px solid rgb(214, 212, 212);
     border-radius: 20px;
     padding: 15px 20px;
 }
+
+.dashboardStats section p{
+    margin-bottom: 20px;
+}
+
+/* ====================
+    NOVA DENUNCIA E MINHAS DENUNCIAS
+==================== */
 
 .dashboardActions{
     display: grid;
@@ -41,11 +69,26 @@
     background-color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8px;
-    border: 1px dashed rgb(148, 146, 146);
+    border: 1px dashed rgb(214, 212, 212);
     padding: 20px;
     margin: 0 0 24px 0;
 }
+
+.buttonNovaDenuncia:hover{
+    border: 1px dashed #fd7608;    
+    cursor: pointer;
+}
+
+.buttonMinhasDenuncias:hover{
+    border: 1px dashed #3f7cd8;    
+    cursor: pointer;
+}
+
+/* ====================
+    DENUNCIAS RECENTES
+==================== */
 
 .recentDenuncias{
     background-color: white;
@@ -63,5 +106,3 @@
     font-size: 14px;
     color: rgb(148, 146, 146);
 }
-
-
