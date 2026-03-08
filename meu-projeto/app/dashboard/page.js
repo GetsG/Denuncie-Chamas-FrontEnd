@@ -7,10 +7,12 @@ import { PlusCircle } from "@deemlol/next-icons";
 import { BarChart2 } from "@deemlol/next-icons";
 import { AlertTriangle } from "@deemlol/next-icons"
 import Brightness1Icon from '@mui/icons-material/Brightness1';
-
+import { useRouter } from "next/navigation"
 
 
 export default function Dashboard(){
+
+    const router = useRouter()
 
     //VERIFICAR SE O TOKEN ESTÁ ARMAZENADO NO STORAGE
     useEffect(() => {const token = localStorage.getItem("token")
@@ -18,6 +20,11 @@ export default function Dashboard(){
     router.push("/login")
     }}, [])
 
+    function handleReport() {
+    router.push("/report");
+  }
+
+    
     const [total, setTotal] = useState(0)
     const [pendentes, setPendentes] = useState(0)
     const [emAndamento, setEmAndamento] = useState(0)
@@ -64,7 +71,7 @@ export default function Dashboard(){
 
             {/* Dashboard Ações */}
             <div className={styles.dashboardActions}>
-                <button className={styles.buttonNovaDenuncia}>
+                <button className={styles.buttonNovaDenuncia} onClick={handleReport}>
                     <PlusCircle size={45} color="#fd7608" />
                     <h4>Nova Denúncia</h4>
                     <p>Registrar um novo incêndio</p>
