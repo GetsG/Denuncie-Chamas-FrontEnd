@@ -1,20 +1,23 @@
-.container{
+.container {
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-self: center;
-    justify-content: center; /* horizontal */
+    justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 100%;
+    max-width: 650px;
     border: 1px solid rgb(211, 210, 210);
     border-radius: 20px;
-    margin: 20px;
+
+    margin: 20px auto;
+    box-sizing: border-box;
 }
 
 /* CELULAR */
 @media (max-width: 768px) {
   .container {
-    width: 80%;
+    width: calc(100% - 32px);
+    margin: 16px auto;
   }
 }
 
@@ -65,11 +68,16 @@
     font-size: 14px;
 }
 
-.field select{
+.select{
     background-color: rgba(211, 209, 209, 0.575);
     padding: 5px;
     border: 0;
     border-radius: 10px;
+    font-size: 15px;
+}
+
+.select option{
+    font-size: 15px;
 }
 
 /*===================LOCALIZAÇÃO===================*/
@@ -95,6 +103,33 @@
     font-size: 14px;
     gap: 5px;
     justify-content: center;
+}
+
+.locationInfo {
+    margin-top: 10px;
+    padding: 10px 14px;
+    border: 1px solid #00530044;
+    border-radius: 10px;
+    background-color: #11e63515;
+    font-size: 13px;
+    color: #374151;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.locationTitle {
+    font-weight: 600;
+    font-size: 14px;
+    color: #076803;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.locationCoords {
+    font-family: monospace;
+    color: #4b5563;
 }
     
 
@@ -123,6 +158,36 @@
     color: rgba(0, 0, 0, 0.555);
 }
 
+.photoInput:hover{
+    border: 1px dashed rgb(255, 136, 0);
+    background-color: rgba(255, 166, 0, 0.123)
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.photoInput {
+  width: 100%;
+  min-height: 180px;
+  border: 1px dashed #d1d5db;
+  border-radius: 16px;
+  background: #fafafa;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+}
+
 /*====================DESCRIÇÃO====================*/
 
 .descriptionSection{
@@ -146,6 +211,42 @@
     border: 1px solid rgb(214, 212, 212);
     resize: none;
 }
+
+/*=================PESSOAS NO LOCAL=================*/
+
+.riskAlert{
+    display: flex;
+    gap: 10px;
+    background-color: #f00a0a5e;
+    padding: 12px;
+    color: rgb(126, 4, 4);
+    border: 1px solid rgba(255, 0, 0, 0.247);
+    border-radius: 10px;
+}
+
+.riskCheckbox{
+    accent-color: rgb(0, 0, 0);
+}
+
+.riskContent{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    
+}
+
+.riskTitle{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+}
+
+.riskDescription{
+    font-size: 12px;
+}
+
 
 /*===============INFORMAÇÃO IMPORTANTE===============*/
 
@@ -195,5 +296,9 @@
      color: white;
 }
 
-
+.errors{
+    color: #c50808;
+    font-size: 14px;
+    text-align: center;
+}
 
