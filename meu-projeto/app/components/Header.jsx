@@ -31,17 +31,13 @@ export default function Header() {
         router.push("/login");
   }
 
-    function handlePerfil() {
-        router.push("/perfil");
-  }
-
   function handleDashboard() {
         router.push("/dashboard");
   }
 
   return (
     <header className={styles.Header}>
-        <div className={styles.left}>
+        <div className={styles.left} onClick={() => router.push("/dashboard")}>
             <Image className={styles.logo} src={Logo} alt="Logo Denuncie Chamas"/>
         <div className={styles.title}>
             <h1>Denuncie Chamas</h1>
@@ -51,7 +47,7 @@ export default function Header() {
 
         <nav className={styles.navbar}>
             <button onClick={() => setMenuOpen(!menuOpen)} className={styles.buttonMenu}>
-                <MenuIcon/> <p>Menu</p>
+                <MenuIcon sx={{ fontSize: 20, color: '#000000' }}/> <p>Menu</p>
             </button>
 
             {menuOpen && (
@@ -61,11 +57,6 @@ export default function Header() {
                     <div className={styles.divMenuItem} onClick={handleDashboard}>
                         <Grid size={14} color="#000000" />
                         <p className={styles.menuItem}>Tela inicial</p>
-                    </div>
-
-                    <div className={styles.divMenuItem} onClick={handlePerfil}>
-                        <User size={14} color="#000000" />
-                        <p className={styles.menuItem}>Perfil</p>
                     </div>
 
                     <div className={styles.divMenuItem}>

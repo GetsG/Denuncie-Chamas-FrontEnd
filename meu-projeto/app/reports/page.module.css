@@ -1,0 +1,90 @@
+.container{
+    padding: 16px 50px;
+}
+
+/*===============CONTAINER FILTROS===============*/
+.filtersSection{
+    border: 1px solid rgb(211, 210, 210);
+    background-color: white;
+    padding: 20px;
+}
+
+/*===============TITULO FILTROS===============*/
+.filtersHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.filtersHeader p{
+    color: rgb(116, 114, 114);
+}
+
+/*===============FILTROS===============*/
+.filtersGroup{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.filterItem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filterItem select{
+    padding: 10px;
+    background-color: hsla(220, 13%, 91%, 0.637);
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/*===============DENUNCIAS===============*/
+.reportsTitle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 40px 0 20px;
+}
+
+.emptyState{
+    background-color: white;
+    padding: 50px 0;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 20px;
+}
+
+.emptyState h2{
+    font-size: 18px;
+}
+
+.emptyState p{
+    font-size: 16px;
+    color: #838383;
+}
+
+.emptyState button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(211, 210, 210);
+    cursor: pointer;
+    background: linear-gradient(
+     to right,
+     #f97316,
+     #dc2626);
+     color: white;
+     font-size: 16px;
+     font-weight: bold;
+}
+

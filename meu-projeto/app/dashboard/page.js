@@ -72,13 +72,13 @@ export default function Dashboard(){
             {/* Dashboard Ações */}
             <div className={styles.dashboardActions}>
                 <button className={styles.buttonNovaDenuncia} onClick={handleReport}>
-                    <PlusCircle size={45} color="#fd7608" />
+                    <PlusCircle size={60} color="#fd7608" />
                     <h4>Nova Denúncia</h4>
                     <p>Registrar um novo incêndio</p>
                 </button>
 
-                <button className={styles.buttonMinhasDenuncias}>
-                    <FileText size={45} color="#3f7cd8" />
+                <button className={styles.buttonMinhasDenuncias} onClick={() => router.push("/reports")}>
+                    <FileText size={60} color="#3f7cd8" />
                     <h4>Minhas Denúncias</h4>
                     <p>Ver todas as denúncias</p>
                 </button>
@@ -92,6 +92,14 @@ export default function Dashboard(){
                     <p>Suas últimas 5 denúncias registradas</p>
                 </div>
                 
+                {total === 0 ? 
+                    <div className={styles.noReports}>
+                        <FileText size={60} color="#bbb8b8b2" />
+                        <p>Nenhuma denúncia registrada ainda</p>
+                        <button onClick={() => router.push("/report")}>Criar primeira denúncia</button>
+
+                    </div> : ""
+            }
 
             </div>
             {/* ------------------------------------ */}

@@ -74,6 +74,7 @@
     border: 1px dashed rgb(214, 212, 212);
     padding: 20px;
     margin: 0 0 24px 0;
+    font-size: 16px
 }
 
 .buttonNovaDenuncia:hover{
@@ -94,7 +95,7 @@
     background-color: white;
     border: 1px solid rgb(214, 212, 212);
     border-radius: 20px;
-    padding: 15px 20px;
+    padding: 20px;
 }
 
 .containerTitleRecentDenuncias{
@@ -106,4 +107,30 @@
 .containerTitleRecentDenuncias p{
     font-size: 14px;
     color: rgb(148, 146, 146);
+}
+
+.noReports{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noReports p{
+    font-size: 16px;
+    color: #838383;
+}
+
+.noReports button{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(211, 210, 210);
+    cursor: pointer;
+    background: linear-gradient(
+     to right,
+     #f97316,
+     #dc2626);
+     color: white;
+     font-size: 16px;
+     font-weight: bold;
 }

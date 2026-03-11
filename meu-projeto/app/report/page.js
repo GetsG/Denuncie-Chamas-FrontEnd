@@ -16,7 +16,7 @@ import WarningIcon from '@mui/icons-material/Warning';
 import capturarLocalizacao from "../services/geoLocation";
 
 
-export default function Home() {
+export default function Report() {
 
   const {register, handleSubmit, setValue, formState: { errors }} = useForm()
   const router = useRouter()
@@ -44,10 +44,7 @@ export default function Home() {
 
       {/* TITULO E DESCRIÇÃO*/}
       <div className={styles.header}>
-        <h4 className={styles.headerTitle} >
-          <WhatshotIcon className={styles.iconPendente} sx={{ fontSize: 20 , color: '#fd0000'}}/>
-          Denunciar Incêndio
-        </h4>
+        <h4 className={styles.headerTitle}>Denunciar Incêndio</h4>
         <p className={styles.headerDescription}>Preencha as informações abaixo de forma rápida e objetiva</p>
       </div>
       {/*-------------------*/}
@@ -70,7 +67,6 @@ export default function Home() {
             <option value="florestal">🌲 Florestal</option>
             <option value="urbano">🏙️ Urbano</option>
             <option value="rural">🌾 Rural</option>
-            
           </select>
 
           {errors.tipoIncendio && (
@@ -177,7 +173,7 @@ export default function Home() {
           <input type="checkbox" {...register("pessoasEmRisco")} class={styles.riskCheckbox}/>
             <div className={styles.riskContent}>
               <h2 className={styles.riskTitle}>
-                <WarningIcon className={styles.iconPendente} sx={{ fontSize: 14 , color: '#c20303'}}/>
+                <WarningIcon className={styles.iconPendente} sx={{ fontSize: 14 , color: '#ecc92d'}}/>
                 Há pessoas no local em risco?</h2>
               <p className={styles.riskDescription}>Marque esta opção se houver pessoas presas, feridas ou em perigo iminente.
               Isso aumentará automaticamente a gravidade para <strong>ALTA PRIORIDADE</strong>.

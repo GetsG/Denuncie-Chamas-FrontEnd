@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    background-color: #ff660015;
+    background-color: rgba(243, 234, 229, 0.692);
     border-bottom: 1px solid rgb(211, 210, 210);
     padding: 30px;
     border-radius: 20px 20px 0 0;
@@ -53,7 +53,7 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-    gap: 15px;
+    gap: 18px;
 }
 
 /*=================TIPO DE INCÊNDIO=================*/
@@ -64,20 +64,23 @@
     gap: 5px;
 }
 
-.field h4{
+.fieldTitle{
+    color: black;
     font-size: 14px;
 }
 
 .select{
-    background-color: rgba(211, 209, 209, 0.575);
+    background-color: hsla(220, 13%, 91%, 0.637);
+    color: rgb(82, 82, 82);
     padding: 5px;
     border: 0;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .select option{
-    font-size: 15px;
+    font-size: 13px;
+    color: black;
 }
 
 /*===================LOCALIZAÇÃO===================*/
@@ -95,6 +98,7 @@
 }
 
 .locationButton{
+    color: black;
     padding: 10px;
     border: 1px solid rgb(214, 212, 212);
     border-radius: 20px;
@@ -139,7 +143,10 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    font-size: 13px;
+    font-weight: bold;
 }
+
 
 .photoSection h4{
     display: flex;
@@ -160,7 +167,7 @@
 
 .photoInput:hover{
     border: 1px dashed rgb(255, 136, 0);
-    background-color: rgba(255, 166, 0, 0.123)
+    background-color: #fcebd654;
 }
 
 .previewImage {
@@ -169,6 +176,7 @@
   object-fit: cover;
   border-radius: 12px;
 }
+
 
 .photoInput {
   width: 100%;
@@ -216,11 +224,11 @@
 
 .riskAlert{
     display: flex;
-    gap: 10px;
-    background-color: #f00a0a5e;
+    gap: 20px;
+    background-color: #fef2f2;
     padding: 12px;
     color: rgb(126, 4, 4);
-    border: 1px solid rgba(255, 0, 0, 0.247);
+    border: 1px solid #991b1b4f;
     border-radius: 10px;
 }
 
@@ -231,12 +239,12 @@
 .riskContent{
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 10px;
     
 }
 
 .riskTitle{
-    font-size: 12px;
+    font-size: 14px;;
     display: flex;
     align-items: center;
     gap: 3px;
@@ -244,15 +252,15 @@
 }
 
 .riskDescription{
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
 /*===============INFORMAÇÃO IMPORTANTE===============*/
 
 .warningBox{
-    background-color: rgba(235, 214, 175, 0.76);
-    border: 1px solid #ffa500;
+    background-color: #fff7ed;
+    border: 1px solid #fdba74;
     border-radius: 20px;
     padding: 12px;
     display: grid;
@@ -263,13 +271,13 @@
 .warningBox h4{
     font-size: 14px;
     grid-column: 2;
-    color: rgb(170, 118, 20);
+    color: #a56016;
 }
 
 .warningBox p{
     font-size: 14px;
     grid-column: 2;
-    color: rgb(184, 126, 20);
+    color: #a56016;
 }
 
 /*===============BUTTON CANCELAR / SUBMIT===============*/
